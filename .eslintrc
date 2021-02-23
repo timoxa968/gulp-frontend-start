@@ -1,5 +1,4 @@
 {
-  "linebreak-style": ["error", "windows"],
   "extends": "airbnb-base",
   "parser": "@babel/eslint-parser",
   "env": {
