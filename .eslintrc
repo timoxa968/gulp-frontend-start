@@ -1,0 +1,9 @@
+{
+  "parser": "@babel/eslint-parser",
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "jquery": true,
+    "console": true
+  }
+}

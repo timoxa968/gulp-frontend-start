@@ -4,7 +4,7 @@ __MACOSX
 .Saved
 _arc
 bower_components
-mode_modules
+node_modules
 .vscode
 .publish
 .DS_Store

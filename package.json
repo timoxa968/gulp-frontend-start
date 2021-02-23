@@ -3,9 +3,37 @@
   "version": "1.0.0",
   "description": "gulp-frontend-start",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp watch",
+    "build:dev": "gulp build",
+    "build:prod": "gulp build --prod"
   },
-  "keywords": ["gulp", "js", "sass", "pug", "linters"],
+  "lint-staged": {
+    "*.js": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "link-stage"
+    }
+  },
+  "keywords": [
+    "gulp",
+    "js",
+    "sass",
+    "pug",
+    "linters"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "@babel/eslint-parser": "^7.13.0",
+    "@babel/preset-env": "^7.13.0",
+    "@babel/register": "^7.13.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4"
+  }
 }
