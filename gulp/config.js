@@ -3,8 +3,6 @@ import { src } from "gulp";
 const srcPath = 'src';
 const destPath = 'build';
 
-
-
 const config = {
   src: {
     root: srcPath,
@@ -22,12 +20,12 @@ const config = {
     css: `${destPath}/css`,
     js: `${destPath}/js`,
     fonts: `${destPath}/fonts`,
-    images: `${destPath}/images`
+    images: `${destPath}/images`,
   },
-  setEnv(){
+  setEnv() {
     this.isProd = process.argv.includes('--prod');
     this.isDev = !this.isProd;
-  }
+  },
 };
 
 export default config;
