@@ -1,5 +1,3 @@
-import { src } from "gulp";
-
 const srcPath = 'src';
 const destPath = 'build';
 
@@ -12,8 +10,9 @@ const config = {
     images: `${srcPath}/assets/images`,
     iconsMono: `${srcPath}/assets/icons/mono`,
     iconsMulti: `${srcPath}/assets/icons/multi`,
-    pug: `${srcPath}/pug`
+    pug: `${srcPath}/pug`,
   },
+
   dest: {
     root: destPath,
     html: destPath,
@@ -22,6 +21,7 @@ const config = {
     fonts: `${destPath}/fonts`,
     images: `${destPath}/images`,
   },
+
   setEnv() {
     this.isProd = process.argv.includes('--prod');
     this.isDev = !this.isProd;
